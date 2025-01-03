@@ -42,7 +42,7 @@ class HomePage extends StatelessWidget {
                   children: [
                     Row(
                       children: [
-                        Image.asset('assets/images/gopayl.png', height: 20), // Add logo here
+                        Image.asset('assets/images/gopay.png', height: 20), // Add logo here
                         SizedBox(width: 8),
                         Text(
                           'GoPay',
