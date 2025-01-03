@@ -1,3 +1,4 @@
+import 'package:cots/design_system/colors.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import '../controller/onboarding_controller.dart';
@@ -103,7 +104,7 @@ class OnboardingView extends StatelessWidget {
                     Get.toNamed('/login');
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green, // Warna hijau latar
+                    backgroundColor: AppColors.primary, // Warna hijau latar
                     shape: RoundedRectangleBorder(
                       borderRadius:
                           BorderRadius.circular(50), // Membulatkan sudut tombol
