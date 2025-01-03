@@ -37,11 +37,11 @@ class OnboardingView extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
                 Image.asset(
-                  'assets/images/gojek.png', // Ganti dengan path logo Gojek
+                  'assets/images/gojek.png',
                   height: 30,
                 ),
                 Image.asset(
-                  'assets/images/IND.png', // Ganti dengan path logo IDN
+                  'assets/images/IND.png',
                   height: 30,
                 ),
               ],
@@ -49,7 +49,7 @@ class OnboardingView extends StatelessWidget {
           ),
           SizedBox(
             height: 10,
-          ), // Tambahkan jarak antara header dan konten utama
+          ),
           Expanded(
             child: PageView.builder(
               onPageChanged: controller.updatePage,
@@ -104,10 +104,10 @@ class OnboardingView extends StatelessWidget {
                     Get.toNamed('/login');
                   },
                   style: ElevatedButton.styleFrom(
-                    backgroundColor: AppColors.primary, // Warna hijau latar
+                    backgroundColor: AppColors.primary,
                     shape: RoundedRectangleBorder(
                       borderRadius:
-                          BorderRadius.circular(50), // Membulatkan sudut tombol
+                          BorderRadius.circular(50),
                     ),
                     padding:
                         EdgeInsets.symmetric(vertical: 16), // Tinggi tombol
@@ -125,7 +125,7 @@ class OnboardingView extends StatelessWidget {
                 ),
                 SizedBox(
                     height:
-                        12), // Jarak antara tombol "Masuk" dan "Daftar dulu"
+                        12),
 
                 // Tombol "Belum ada akun? Daftar dulu"
                 OutlinedButton(
@@ -135,28 +135,28 @@ class OnboardingView extends StatelessWidget {
                   },
                   style: OutlinedButton.styleFrom(
                     side: BorderSide(
-                        color: Colors.green, width: 2), // Border hijau
+                        color: Colors.green, width: 2),
                     shape: RoundedRectangleBorder(
                       borderRadius:
-                          BorderRadius.circular(50), // Membulatkan sudut tombol
+                          BorderRadius.circular(50),
                     ),
                     padding:
-                        EdgeInsets.symmetric(vertical: 16), // Tinggi tombol
+                        EdgeInsets.symmetric(vertical: 16),
                     minimumSize:
-                        Size(double.infinity, 48), // Lebar tombol penuh
+                        Size(double.infinity, 48),
                   ),
                   child: Text(
                     'Belum ada akun?, Daftar dulu',
                     style: TextStyle(
                       fontSize: 16,
                       fontWeight: FontWeight.bold,
-                      color: Colors.green, // Teks hijau
+                      color: Colors.green,
                     ),
                   ),
                 ),
 
                 SizedBox(
-                    height: 16), // Jarak antara tombol dan teks di bawahnya
+                    height: 16),
 
                 // Keterangan persetujuan
                 Text(

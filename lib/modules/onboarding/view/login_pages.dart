@@ -1,5 +1,6 @@
 import 'package:cots/design_system/colors.dart';
 import 'package:flutter/material.dart';
+import 'home_pages.dart';
 
 class LoginPage extends StatelessWidget {
   @override
@@ -17,7 +18,7 @@ class LoginPage extends StatelessWidget {
         title: Row(
           children: [
             Image.asset(
-              'assets/images/gojek.png', // Path logo Gojek
+              'assets/images/gojek.png',
               height: 30,
             ),
           ],
@@ -82,7 +83,7 @@ class LoginPage extends StatelessWidget {
                 SizedBox(width: 10),
                 Expanded(
                   child: TextField(
-                    decoration: InputDecoration(                                            
+                    decoration: InputDecoration(
                       border: OutlineInputBorder(
                         borderSide: BorderSide(color: Colors.grey),
                         borderRadius: BorderRadius.circular(5),
@@ -105,13 +106,13 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 20),
             GestureDetector(
               onTap: () {
-                // Handle "Issue with number?" tap
+                // Handle issue with number
               },
               child: Text(
                 'Issue with number?',
                 style: TextStyle(
                   fontSize: 14,
-                  color: AppColors.primary,
+                  color: Colors.blue, // Use your app's primary color here
                   decoration: TextDecoration.underline,
                 ),
               ),
@@ -119,10 +120,14 @@ class LoginPage extends StatelessWidget {
             SizedBox(height: 30),
             ElevatedButton(
               onPressed: () {
-                // Add your onPressed code here!
+                // Navigasi ke halaman HomePage
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) => HomePage()),
+                );
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: AppColors.primary,
+                backgroundColor: AppColors.primary, // Primary color
                 padding: EdgeInsets.symmetric(vertical: 15.0),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(30.0),
