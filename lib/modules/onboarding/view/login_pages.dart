@@ -1,6 +1,6 @@
 import 'package:cots/design_system/colors.dart';
 import 'package:flutter/material.dart';
-import 'home_pages.dart';
+import 'package:cots/modules/onboarding/view/home_pages.dart';
 
 class LoginPage extends StatelessWidget {
   @override
